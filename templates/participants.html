@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Participants</title>
+</head>
+<body>
+<h1> Welcome </h1>
+<a href="http://127.0.0.1:5000/close_session"> Log out </a> | <a href="http://127.0.0.1:5000/format"> Format Data </a> <br><br>
+{% if data != '' %}
+	{{data|safe}}
+{% else %}
+	There are no participants currently.
+{% endif %}
+</body>
+</html>
